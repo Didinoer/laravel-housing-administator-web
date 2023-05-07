@@ -24,7 +24,7 @@ class editresidentrequest extends FormRequest
     public function rules()
     {
         return [
-        'phone_number' =>'required|unique:residents',
+        'phone_number' =>'required|max:25',
         'house_number' =>'required|max:3',
         'name' =>'required',
         'block_id' =>'required'
